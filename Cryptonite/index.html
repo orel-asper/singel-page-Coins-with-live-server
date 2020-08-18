@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptonite</title>
+</head>
+
+<body>
+  <div id="spinner">
+    <div id="spinnerContainer">
+      <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='fatherDiv'>
+    <div class="sticky-top">
+      <div class="card text-center">
+        <div class="card-header"></div>
+        <div class="card-body"></div>
+        <h5 class="card-title">Cryptonite</h5>
+        <p class="card-text">Welcome to my Cryptonite website</p>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-content-between">
+          <ul class="navbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home" id="Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#reports" id="live-report">Live Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#about" id="about-tab">About</a>
+            </li>
+          </ul>
+          <div class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id='inp' />
+            <a class="btn btn-light" data-toggle="tab" id="searchBtn" type="button">
+              Search
+            </a>
+          </div>
+        </nav>
+        <h2 class="card text-center card-header" id="sorry"></h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="about" ></div>
+      <div id="canvas"></div>
+      <div id="divTag" class="row"></div></div>
+    <div id="popup"></div>
+    <div class="modal" tabindex="-1" role="dialog" id='myModal'>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">sorry you can choose only 5 coins</h5>
+          </div>
+          <div class="modal-body">
+            <p>Please remove at least one coin.</p>
+            <div class="row" id="getMeToggleCoins"></div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal" id='CancelChanges'>Cancel</a>
+            <a type="submit" class="btn btn-light" id='SaveChanges'>Save Changes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <a id="back-to-top" href="#" class="btn btn-secondary btn-lg back-to-top" role="button"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z"/>
+  </svg></a>
+  <script src="index.js"></script>
+</body>
+
+</html>
